@@ -4,15 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
 
-    <header>
-        <h1>
-            Oi mundo bella 
-        </h1>
-    </header>
+
+    <main id="content-main">
+        <div id = "margin-logo">
+            <img src="images/Alura.png" alt="Logo alura" id = "logo-alura">
+        </div>
+        
+
+        <textarea rows="4" cols="50"  type="text"  placeholder="Ingrese texto aqui" id="input-text"></textarea>
+
+ 
+        <div id="condition">
+            <img src="images/Exclamation.png" alt="Signo exclamacion" id = "signo">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div id="buttons">
+            <button id="button-encrypt" onclick="encrypt()">Encriptar</button>
+            <button id="button-decrypt" onclick="decrypt()">Desencriptar</button>
+        </div>
+
+        <div id="Waiting-content">
+            <img src="images/Rectangle.png" alt="rectangulo" id="rectangle">
+            <img src="images/Search.png" alt="search" id="search-img">
+
+            <div id="Waiting-text">
+                <p id="search-me1">Ningún mensaje fue encontrado.</p>
+                <p id="search-me2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>   
+
+            <p id="output-text"></p>
+
+        
+        </div>
+
+    </main>
+    
+    <script>
+        function encrypt() {
+
+            var imagen = document.getElementById("search-img");
+            imagen.style.visibility = "hidden";
+            var textwaiting = document.getElementById("Waiting-text");
+            textwaiting.style.visibility = "hidden";
+
+            var textarea = document.getElementById("input-text");
+            var inputText = textarea.value;
+            var textEncrypt = "";
+
+            for (let nthletter = 0; nthletter < inputText.length; nthletter++) {
+                
+                var caracter = inputText[nthletter];
+
+                if (caracter == "a") {
+                    textEncrypt = textEncrypt + "ia";
+                } else if (caracter == "e") {
+                    textEncrypt = textEncrypt + "enter";
+                } else if (caracter == "i") {
+                    textEncrypt = textEncrypt + "imes";
+                }else if (caracter == "o") {
+                    textEncrypt = textEncrypt + "ober";
+                }else if (caracter == "u") {
+                    textEncrypt = textEncrypt + "ufat";
+                } else{
+                    textEncrypt = textEncrypt + caracter;
+                }
+
+            }
+
+            var outputText = document.getElementById("output-text");
+            outputText.textContent = textEncrypt;
+
+
+
+
+        }
+
+
+        function decrypt() {
+
+            var imagen = document.getElementById("search-img");
+            imagen.style.visibility = "hidden";
+            var textwaiting = document.getElementById("Waiting-text");
+            textwaiting.style.visibility = "hidden";
+
+            var textarea = document.getElementById("input-text");
+            var inputText = textarea.value;
+            var textDecrypt = "";
+
+            for (let nthletter = 0; nthletter < inputText.length; nthletter++) {
+                
+                var caracter = inputText[nthletter];
+
+                if (caracter == "a") {
+                    textDecrypt = textDecrypt + "a";
+                    nthletter++;
+                } else if (caracter == "e") {
+                    textDecrypt = textDecrypt + "e";
+                    nthletter+= 4;
+                } else if (caracter == "i") {
+                    textDecrypt = textDecrypt + "i";
+                    nthletter+= 3;
+                }else if (caracter == "o") {
+                    textDecrypt = textDecrypt + "o";
+                    nthletter+= 3; 
+                }else if (caracter == "u") {
+                    textDecrypt = textDecrypt + "u";
+                    nthletter+= 3;
+                } else{
+                    textDecrypt = textDecrypt + caracter;
+                }
+
+            }
+
+            var outputText = document.getElementById("output-text");
+            outputText.textContent = textDecrypt;
+
+
+
+
+        }
+
+      </script>
+    
+
+
+
+
     
 </body>
 </html>

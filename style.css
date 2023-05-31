@@ -1,0 +1,278 @@
+body{
+    background-color: #F3F5FC
+    
+}
+
+#margin-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+#logo-alura{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+
+    width: 44px;
+    height: auto;
+    
+
+}
+
+#search-img{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+#input-text{
+    background-color: transparent;
+    position: absolute;
+    width: 577px;
+    height: 480px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    resize: none;
+    color: #0A3871;
+
+    border: none;
+
+}
+
+
+#input-text:focus {
+    
+    outline: none;
+    color: grey;
+
+  }
+
+#condition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+#condition p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+}
+
+#condition img {
+    margin-right: 10px;
+    width: 16px;
+}
+
+#buttons{
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+}
+
+#Waiting-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+#output-text{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #495057;
+}
+
+#output-text:focus {
+    
+    outline: none;
+
+
+  }
+
+#button-encrypt{
+
+
+    width: 328px;
+    height: 67px;
+
+
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    border: none;
+    
+    
+}
+
+#button-decrypt{
+    
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    
+    
+  }
+  
+#button-encrypt:hover, #button-decrypt:hover {
+    background-color: #495057;
+    transform: scale(104%);
+    color: white;
+    transition: 1s;
+}
+
+#rectangle{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#search-me1{
+    width: 336px;
+    height: 58px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    
+    color: #343A40;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#search-me2{
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #nombre-desarrollador {
+    font-weight: bold;
+  }
+  
+  #anio-desarrollo::after {
+    content: "2023";
+  }
+  
